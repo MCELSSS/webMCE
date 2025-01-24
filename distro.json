@@ -1,50 +1,54 @@
 {
-  "version": "1.0.0",
+  "version": "0.0.2",
   "discord": {
-      "clientId": "12334567890123456789",
+      "clientId": "385581240906022916",
       "smallImageText": "WesterosCraft",
       "smallImageKey": "seal-circle"
   },
-  "rss": "https://westeroscraft.com/articles/index.rss",
+  "java": {
+      "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
+  },
+  "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
   "servers": [
       {
-          "id": "MCE moddée",
-          "name": "MCE moddée",
-          "description": "MCE serveur!",
-          "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/example_icon.png",
-          "version": "BETA",
-          "address": "Lizoria.minecraft-mania.fr",
+          "id": "MCE Serveur",
+          "name": "MCE Serveur PVP",
+          "description": "Serveur principale. Connectez vous pour rentrez dans le monde.",
+          "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
+          "version": "0.0.2",
+          "address": "91.197.6.54:25662",
           "minecraftVersion": "1.7.10",
           "discord": {
-              "shortId": "Example",
-              "largeImageText": "WesterosCraft Example Server",
-              "largeImageKey": "server-example"
+              "shortId": "Production",
+              "largeImageText": "WesterosCraft Production Server",
+              "largeImageKey": "server-prod"
           },
           "mainServer": true,
           "autoconnect": true,
           "modules": [
-            {
-              "id": "net.mohistmc:mohist-loader:0.15.0",
-              "name": "mohist (mohist-loader)",
-              "type": "mohist",
-              "artifact": {
-              "size": 1196222,
-              "MD5": "a43d5a142246801343b6cedef1c102c4",
-              "url": "https://mohistmc.com/api/v2/projects/mohist/1.7.10/builds/40/mohist-1.7.10-40-server.jar"
-              }
-            },
-            {
-              "id": "com.mce:mcemodpack:v1",
-              "name": "MCE Resource Pack (V1)",
-              "type": "file",
-               "artifact": {
-                  "size": 45241339,
-                  "MD5": "ec2d9fdb14d5c2eafe5975a240202f1a",
-                  "path": "resourcepacks/MCEModPack.zip",
-                  "url": "https://filebin.net/t7hte8j5l60yxbxh/modpack.zip"
-              }
-          }
+              {
+                  "id": "net.minecraftforge:forge:1.7.10-10.13.4.1614-1.7.10",
+                  "name": "Minecraft Forge",
+                  "type": "ForgeHosted",
+                  "artifact": {
+                      "size": 3699647,
+                      "MD5": "3fcc9b0104f0261397d3cc897e55a1c5",
+                      "url": "https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-installer.jar"
+                  },
+                  "subModules": [
+                    {
+                      "id": "net.minecraft:journeymap:1.7.10",
+                      "name": "Mojang (JourneyMap)",
+                      "type": "Library",
+                      "artifact": {
+                          "size": 8932197,
+                          "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                          "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/NAabJ9OV/journeymap-1.7.10-5.2.8-unlimited.jar"
+                      }
+                  }
+                  ]
+                }
           ]
       }
-  ]
+    ]
 }
