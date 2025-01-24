@@ -12,7 +12,7 @@
           "name": "MCE moddée",
           "description": "MCE serveur!",
           "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/example_icon.png",
-          "version": "0.0.1",
+          "version": "1.7.10",
           "address": "Lizoria.minecraft-mania.fr",
           "minecraftVersion": "1.7.10",
           "discord": {
